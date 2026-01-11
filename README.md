@@ -1,6 +1,6 @@
 # 🚀 Cursor Curso - Proyectos de Python
 
-Este repositorio contiene tres proyectos completos desarrollados con Python, cada uno demostrando diferentes aspectos de programación y desarrollo.
+Este repositorio contiene cuatro proyectos completos desarrollados con Python, cada uno demostrando diferentes aspectos de programación y desarrollo.
 
 ## 📋 Proyectos Incluidos
 
@@ -94,13 +94,60 @@ python organizar.py --duplicados
 
 ---
 
+### 4. 📝 Editor de Notas (Aplicación de Escritorio)
+**Archivos principales:** `notas.py`
+
+Aplicación de escritorio con interfaz gráfica (GUI) desarrollada con Tkinter.
+
+**Características:**
+- ✏️ Editor de texto multilínea
+- 💾 Abrir y guardar archivos
+- 📋 Menú Editar (cortar, copiar, pegar, deshacer/rehacer)
+- ⚠️ Detección de cambios sin guardar
+- ⌨️ Atajos de teclado (Ctrl+S, Ctrl+O, etc.)
+- 📊 Barra de estado
+- 🎨 Interfaz moderna y funcional
+
+**Ejecución:**
+```bash
+python notas.py
+```
+
+**Requisitos especiales:**
+- En Linux, instalar tkinter: `sudo apt-get install python3-tk` (Debian/Ubuntu)
+- En Windows y Mac, tkinter viene incluido con Python
+
+**Tecnologías:** Tkinter (biblioteca estándar de Python)
+
+---
+
 ## 🛠️ Instalación y Configuración
 
 ### Requisitos
 - Python 3.6+
 - pip
 
-### Instalación de dependencias
+### Instalación de dependencias del sistema
+
+**Linux (Debian/Ubuntu):**
+```bash
+# Instalar tkinter (requerido para el editor de notas)
+sudo apt-get update
+sudo apt-get install python3-tk
+```
+
+**Linux (Fedora/RHEL):**
+```bash
+sudo dnf install python3-tkinter
+```
+
+**Mac:**
+- Tkinter viene incluido con Python instalado desde python.org
+
+**Windows:**
+- Tkinter viene incluido con Python
+
+### Instalación de dependencias de Python
 
 ```bash
 # Crear entorno virtual (si no existe)
@@ -119,6 +166,7 @@ pip install -r requirements.txt
 - Flask >= 3.0.0 (para el gestor de tareas)
 - pandas >= 2.0.0 (para análisis de datos)
 - matplotlib >= 3.7.0 (para visualizaciones)
+- Tkinter (biblioteca estándar, requiere instalación en Linux)
 
 ---
 
@@ -128,6 +176,7 @@ pip install -r requirements.txt
 Cursor-curso/
 ├── app.py                      # Aplicación Flask (Gestor de Tareas)
 ├── main.py                     # Script de análisis de ventas
+├── notas.py                    # Editor de Notas (GUI con Tkinter)
 ├── organizar.py                # Organizador de archivos
 ├── generar_datos_ventas.py    # Generador de datos sintéticos
 ├── crear_archivos_prueba.py   # Generador de archivos de prueba
@@ -179,6 +228,12 @@ python main.py                   # Ejecutar análisis
 python organizar.py -c ~/Downloads
 ```
 
+### Editor de Notas
+```bash
+# Asegúrate de tener tkinter instalado (ver sección de instalación)
+python notas.py
+```
+
 ---
 
 ## 📚 Recursos de Aprendizaje
@@ -187,8 +242,10 @@ Estos proyectos fueron desarrollados como parte de un curso práctico de Python,
 - Desarrollo web con Flask
 - Análisis de datos con pandas
 - Visualización de datos con matplotlib
+- Desarrollo de aplicaciones de escritorio con Tkinter
 - Manipulación de archivos y sistema de archivos
 - Programación orientada a objetos y funciones
+- Programación dirigida por eventos (GUI)
 - Buenas prácticas de Python
 
 ---
