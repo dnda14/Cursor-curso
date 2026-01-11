@@ -149,3 +149,16 @@ cython_debug/
 
 # Generated files (gráficas y outputs generados por scripts)
 grafica_dispersion.png
+ventas.csv
+ventas_por_mes.png
+top5_productos.png
+
+# Carpetas de prueba
+carpeta_prueba/
+
+# Datos generados y archivos de prueba
+datos.csv
+texto.txt
+
+# Archivos de datos de aplicaciones
+tareas.json
